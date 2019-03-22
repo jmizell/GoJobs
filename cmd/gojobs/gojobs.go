@@ -29,8 +29,8 @@ func main() {
 	shell := flag.String("shell", "/bin/bash", "the shell to run the command in")
 	dir := flag.String("dir", cwd, "directory to run the command in")
 	add := flag.Bool("add", false, "adds a command to the jobs file")
-	env := flag.String("env", "", "environment variables to set, formatted as a json object. \n"+
-		"(default to shells environment variables)")
+	env := flag.String("env", "", "environment variables to set, formatted as a json list in the " +
+		"form of [\"key=value\"]. \n(default to shells environment variables)")
 	run := flag.Bool("run", false, "runs the commands in the jobs file")
 	file := flag.String("file", "jobs.json", "file to use for jobs")
 	LogFilename := flag.String("logfile", "", "path to where logs are to be written or read from")

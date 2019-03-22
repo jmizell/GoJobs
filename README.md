@@ -1,6 +1,6 @@
 # GoJobs
 GoJobs is a management tool for running concurrent bash commands in 
-the same terminal.  It logs the output or each command and tracks
+the same terminal.  It logs the output of each command and tracks
 the final state. 
 
 It's intended as a simple way of monitoring the output of multiple 
@@ -18,7 +18,7 @@ Usage of gojobs:
   -dir string
     	directory to run the command in  
   -env string
-    	environment variables to set, formatted as a json object. 
+    	environment variables to set, formatted as a json list in the form of ["key=value"]. 
     	(default to shells environment variables)
   -file string
     	file to use for jobs (default "jobs.json")
@@ -44,11 +44,11 @@ All other arguments are optional.
 
 **Warning**: gojobs will by default copy the current environment variables 
 as part of the job spec into the config. To override this behavior, use the 
--env flag to specify values as a json object.
+-env flag to specify values as a json list in the form of ["key=value"].
 
 For example, to pass only home, and user, the flag would look like 
 
-```-env='{"HOME":"/home/user_name","USER":"user_name"}'```
+```-env='["HOME=/home/user_name","USER=user_name"]'```
 
 ##### example
 
