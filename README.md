@@ -96,7 +96,7 @@ gojobs \
 
 ### View the log
 
-You can reply the log to the terminal with ``gojobs -logs -logfile="[LOG FILE]"``. This will
+You can replay the log to the terminal with ``gojobs -logs -logfile="[LOG FILE]"``. This will
 dump all command output to the terminal. You can filter logs by specifying a single tag to 
 output, by using a regex pattern to filter the log message field, or both.
 
