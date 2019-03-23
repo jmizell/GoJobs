@@ -65,7 +65,7 @@ gojobs \
 
 ### Running jobs
 
-After adding a job to your config, you can immediately run it with ``gojobs -run``. If not log 
+After adding a job to your config, you can immediately run it with ``gojobs -run``. If no log 
 file is specified, then the output of the jobs will be written to the terminal only.
 
 ##### example
